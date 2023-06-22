@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+  <title>CEM Vibes</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/landingstyles.css') }}">
+</head>
+<body>
+  <h1>Cem Vibes</h1>
+  <form class="form" action="/register">
+    <span class="signup">Sign in</span>
+    <input type="email" placeholder="Email Id" class="form--input" pattern=".+@cemunnar\.ac\.in$" required>
+    <input type="password" placeholder="Password" class="form--input" pattern=".{5,}" required>
+    <a type="submit" class="submitt" href="home.html">Login</a>
+    <a  class="create" href="registration" >Create Account</a>
+</form>
+</body>
+</html>
